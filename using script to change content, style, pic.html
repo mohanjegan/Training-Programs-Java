@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="external.js"></script>     
+</head>
+<body>
+    <div>
+    <p id="demo">JavaScript can change the style of an HTML element.</p>
+    <script>
+    function myFunction1() {
+    document.getElementById("demo").style.fontSize = "25px"; 
+    document.getElementById("demo").style.color = "brown";
+    document.getElementById("demo").style.backgroundColor = "lightgreen";       
+    }
+</script>
+<button type="button" onclick="myFunction1()">Click Me!</button>
+</div>
+<hr>
+<div style="background-color:green;">
+<p>JavaScript can change the content of an HTML element:</p>  
+<button type="button" onclick="myFunction2()">Click Me!</button>  
+<p id="demo1"></p>  
+<script>  
+function myFunction2() {   
+    document.getElementById("demo1").innerHTML = "Hello JavaTpoint!";  
+}  
+</script>
+</div>
+<hr>
+<div style="background-color:wheat;">  
+<script>  
+function light(sw) {  
+    var pic;  
+    if (sw == 0) {  
+        pic = "light-off.png"  
+    } else {  
+        pic = "light-on.png"  
+    }  
+    document.getElementById('myImage').src = pic;  
+}  
+</script>  
+<img id="myImage" src="light-off.png" width="100" height="180">  
+<p>  
+<button type="button" onclick="light(1)">Light On</button>  
+<button type="button" onclick="light(0)">Light Off</button>  
+</p>
+</div>
+<hr>
+<div style="background-color:aqua ;">      
+<h2>External JavaScript Example</h2>  
+    <form onsubmit="fun()">  
+        <label>Enter your name:</label><br>  
+        <input type="text" name="uname" id="frm1"><br>  
+        <label>Enter your Email-address:</label><br>    
+        <input type="email" name="email"><br>  
+        <input type="submit">  
+    </form>
+</div>
+<hr>
+<div style="background-color:grey;">
+    <h2>Below is no script tag not visible in browser</h2>
+    <noscript>This text is not visible in the browser.</noscript>   
+</div>
+<! -- Write commented text here -->
+</body>  
+</html>

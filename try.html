@@ -6,7 +6,7 @@
         </title>
         <style>  
         body{
-            background-color:grey;
+            background-color:wheat;
         }
             table, th, td {  
               border: 2px solid black;
@@ -28,6 +28,50 @@
             </style>
     </head>
     <body>
+        <form>
+                <label for="firstname">First Name: </label><br/>
+                    <input type="text" id="firstname" name="firstname"/> <br/> 
+                <label for="lastname">Last Name: </label> <br/>
+                    <input type="text" id="lastname" name="lastname"/> <br/> 
+                <label for="address">Address: </label> <br/>
+                    <textarea rows="2" cols="20" id="address"></textarea> <br/>
+                <label for="email">Email: </label>  
+                    <input type="email" id="email" name="email"/> <br/>
+                <label for="password">Password: </label>  
+                    <input type="password" id="password" name="password"/> <br/> 
+                <label for="gender">Gender: </label>  
+                    <input type="radio" id="gender" name="gender" value="male"/>Male  
+                    <input type="radio" id="gender" name="gender" value="female"/>Female <br/> 
+                Hobby:<br>  
+                    <input type="checkbox" id="cricket" name="cricket" value="cricket"/>  
+                 <label for="cricket">Cricket</label> <br>  
+                    <input type="checkbox" id="football" name="football" value="football"/>  
+                 <label for="football">Football</label> <br>  
+                    <input type="checkbox" id="hockey" name="hockey" value="hockey"/>  
+                 <label for="hockey">Hockey</label><br/>
+            <button onclick="alert('button clicked')">submit</button>
+          </form>
+          <hr>
+          <form> Refisteration form: 
+            <fieldset>  
+               <legend>User personal information</legend>  
+               <label>Enter your full name</label><br>  
+               <input type="text" name="name"><br>  
+                <label>Enter your email</label><br>  
+                <input type="email" name="email"><br>  
+                <label>Enter your password</label><br>  
+                <input type="password" name="pass"><br>  
+                <label>confirm your password</label><br>  
+                <input type="password" name="pass"><br>  
+                <br><label>Enter your gender</label><br>  
+                <input type="radio" id="gender" name="gender" value="male"/>Male  <br>  
+                <input type="radio" id="gender" name="gender" value="female"/>Female <br/>    
+                <input type="radio" id="gender" name="gender" value="others"/>others <br/>   
+                 <br>Enter your Address:<br>  
+                <textarea></textarea><br>  
+                <input type="submit" value="sign-up" onclick="alert('signed up')">  
+            </fieldset>  
+         </form> 
         <h1 color="white">sample heading</h1>
         <ul>  
             <li color="white">Aries</li>  
@@ -45,9 +89,53 @@
            <dt>Oracle</dt>  
            <dd>-It is a multinational technology corporation.</dd>   
          </dl>
-        <h2 color="white">sample haeding</h2>
-        <a href="https://www.google.com">its google</a>
-        <h3 color="white">sample heading</h3>
+        <h2 color="white">sample haeding below is ordered list</h2>
+        <ol type="i">  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ol>
+           <hr>
+           <ol type="i" start="5">  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ol> 
+           <hr>
+           <ol reversed>  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+             </ol>
+        <a href="https://www.google.com" target="_top">its google</a>
+        <h3 color="white">sample heading below is unordered lists</h3>
+        <ul>  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ul> 
+           <ul type="circle">  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ul> 
+           <ul type="square">  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ul> 
+           <ul type="none">  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ul> 
         <h4 color="white">sample heading</h4>
         <h5 color="white">sample heading</h5>
         <h6 style=color:aqua>sample<hr> heading</h6>
