@@ -1,0 +1,67 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Its The Title</title> 
+  <style>  
+    body {background-color: pink;}  
+    h1 {color: red;} 
+  </style> 
+  <link rel="stylesheet" href="style.css"> 
+  <meta charset="UTF-8">  
+<!--The charset attribute specifies the character encoding. In this example we have set it to "UTF-8" which means it can handle to display any language.-->
+
+<!--To define a description of your webpage:-->
+<meta name="description" content="Free Web tutorials">  
+<!--If you give a meta description then it will be useful for the relevant search to perform by search engines.-->
+<!--To define keywords for search engines:-->
+<meta name="keywords" content="HTML, CSS, XML, JavaScript">  
+<!--To define author of the webpage:-->
+<meta name="author" content="Akon">  
+<!--To refresh document every 30 seconds:-->
+<meta http-equiv="refresh" content="30">  
+<!--Meta refresh is used to provide instructions to the browser to automatically refresh the page after the given time interval. As in above example it will automatically refresh after 30 sec-->
+<!--<meta http-equiv="refresh" content="5; url=https://www.amazon.in/">--> 
+<!--If you add an URL with content value, then it will redirect to that page after the time limit will over-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<base href="https://static.javatpoint.com/htmlpages/images/" target="_blank"> 
+<!--The HTML <base> element is used to specify the base URL and base target for all relative URLs in a page.-->
+<script>  
+    function fun() {  
+    document.getElementById("p").style.color="green";     
+    }  
+</script> 
+</head>  
+<body> 
+<h1>Heading for style</h1> 
+<p>The body's content is displayed in the browser window.</p>  
+<p>The content of the title element is displayed in the browser tab, in favorites and in search engine results.</p>
+<hr>
+<h2>Referesh site sample</h2>
+<p>Kindly wait for 5 seconds, and it will automatically refresh to the other website</p> 
+<hr>
+<h2>viewport sample</h2>
+<p>  
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut   
+    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation   
+    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel   
+    eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu   
+    feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum  
+    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis   
+    eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.  
+    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat  
+    facer possim assum.  
+    </p>
+<hr>
+<h2>Base tag sample images</h2>
+<img src="https://static.javatpoint.com/htmlpages/images/animal.jpg" height="200" width="200">
+<img src="https://static.javatpoint.com/htmlpages/images/bird.jpg" height="200" width="200">
+<img src="https://static.javatpoint.com/htmlpages/images/book.jpg" height="200" width="200">
+<img src="https://static.javatpoint.com/htmlpages/images/cake.jpg" height="200" width="200">
+<img src="https://static.javatpoint.com/htmlpages/images/cake.png" height="200" width="200">   
+<hr>
+<h2>Script within Head element</h2>  
+<p id="p" style="background-color: rgb(220, 114, 43); font-size: x-large;">This will change the color</p>  
+<button type="button" onclick="fun()">Click me</button> 
+
+</body>  
+</html>
